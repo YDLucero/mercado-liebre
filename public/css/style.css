@@ -193,7 +193,7 @@ main section {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top:30px;/*saco esto en caso de poner iconos*/
+    /*margin-top:30px;*/
 }
 
 .card .card-content h4 {
@@ -212,6 +212,26 @@ main section {
     color: var(--color-verde);
 }
 
+.card .card-content .posi {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card .card-content .icon-truck {
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+}
+
+.card .card-content .icon-truck i {
+    color: var(--color-verde);
+    transition-duration: 0.5s;
+}
+
+.card .card-content .icon-truck i:hover {  
+    transform: rotate(-90deg);
+}
 
 
 /*****************/
