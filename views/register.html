@@ -18,7 +18,7 @@
     <header>
         <div class="horiheader">
             <div class="logo">
-                <img src="images/logo-mercado-liebre.svg" alt="">
+                <a href="/"><img src="images/logo-mercado-liebre.svg" alt="" ></a>
             </div>
             <div class="ladode">
                 <div class="search-bar">
@@ -57,9 +57,10 @@
                 <article class="freg">
                     <table>
                         <tr class="column">
-                            <td><input type="text" placeholder="Nombre y apellido"></td>
-                            <td><input type="text" placeholder="Nombre de usuario"></td>
-                            <td><input type="email" placeholder="E-mail"></td>
+                            <td><input type="text" placeholder="Nombre y apellido" required></td>
+                            
+                            <td><input type="text" placeholder="Nombre de usuario" required></td>
+                            <td><input type="email" placeholder="E-mail" required></td>
                         </tr>
                     </table>
                     <p><b>Fecha de nacimiento</b></p>
@@ -97,8 +98,8 @@
                     <table>
                         <tr class="column">
                             <td><input type="file" placeholder="Foto"></td>
-                            <td><input type="password" placeholder="Contraseña"></td>
-                            <td><input type="password" placeholder="Confirmar contraseña"></td>
+                            <td><input type="password" placeholder="Contraseña" required></td>
+                            <td><input type="password" placeholder="Confirmar contraseña" required></td>
                         </tr>
                     </table>
                     <input class="send" type="submit" value="Enviar">
