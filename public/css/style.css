@@ -122,6 +122,7 @@ nav .top-list {
 /********/
 
 main {
+
     margin: 50px auto;
     width: 90%;
 }
@@ -212,6 +213,7 @@ main section {
     color: var(--color-verde);
 }
 
+
 /********************/
 /* Register y Login */
 /********************/
@@ -299,6 +301,8 @@ footer div i {
 
 footer .fin {margin-top: 50px;}
 
+
+
 /*****************/
 /* Media Queries */
 /*****************/
@@ -342,7 +346,10 @@ footer .fin {margin-top: 50px;}
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
         justify-content: space-around;
+
+        
     }
 
     nav .top-list {
