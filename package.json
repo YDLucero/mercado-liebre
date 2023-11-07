@@ -8,15 +8,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EALucero/ML-Flexbox.git"
+
+    "url": "git+https://github.com/YDLucero/mercado-liebre.git"
+
+    "url": "git+https://github.com/YDLucero/mercado-liebre.git"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EALucero/ML-Flexbox/issues"
+
+    
   },
-  "homepage": "https://github.com/EALucero/ML-Flexbox#readme",
+  "homepage": "https://github.com/YDLucero/mercado-liebre#readme",
+
+    "url": "https://github.com/YDLucero/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/YDLucero/mercado-liebre#readme",
+
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.7"

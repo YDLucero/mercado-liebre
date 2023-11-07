@@ -122,7 +122,8 @@ nav .top-list {
 /********/
 
 main {
-    margin: 0 auto;
+
+    margin: 50px auto;
     width: 90%;
 }
 
@@ -138,11 +139,12 @@ main section {
 
 .search-bar {
     background-color: white;
+    border-radius: 5px;
     display: inline-block;
     margin: 25px;
     width: 70%;
     border: 1px solid var(--color-grisOscuro);
-    max-width: 200px;
+    max-width: 250px;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -211,6 +213,96 @@ main section {
     color: var(--color-verde);
 }
 
+
+/********************/
+/* Register y Login */
+/********************/
+
+.order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.freg {  
+    background-color: var(--color-grisOscuro); 
+    padding: 25px 10px;
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    flex-grow: 1;
+    border-radius: 7px;
+}
+
+.freg table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.freg table input {
+    width: 240px;
+    margin: 10px 0;
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.freg div input {margin-left: 20px;}
+
+.freg label, 
+.freg p,
+.freg b {
+    color: var(--color-grisClaro);
+    font-size: 15px;
+    margin: 10px;
+}
+
+.freg .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.freg .send,
+.freg .kill {
+    border: none;
+    border-radius: 8px;
+    color: var(--color-grisClaro);   
+    padding: 3px 7px;
+    width: 240px;
+    height: 22px;
+}
+
+.freg .send {
+    background-color: var(--color-celeste);
+    margin: 25px 20px 0;
+}
+
+.freg .kill {
+    background-color: crimson;
+    margin: 10px 20px 0;
+}
+
+/*****************/
+/* footer */
+/*****************/
+
+footer {text-align: center;}
+
+footer div {margin-bottom: 22px;}
+
+footer div i {
+    font-size: 1.6em;
+    color: var(--color-celeste);
+    margin-bottom: 4px;
+}
+
+footer .fin {margin-top: 50px;}
+
+
+
 /*****************/
 /* Media Queries */
 /*****************/
@@ -254,7 +346,10 @@ main section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+
+        justify-content: space-around;
+
+        
     }
 
     nav .top-list {
