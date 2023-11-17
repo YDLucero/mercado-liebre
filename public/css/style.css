@@ -176,10 +176,12 @@ main section {
 .card {
     background-color: white;
     margin-bottom: 10px;
-    width: 200px;
+    width: 80vw;
     flex-grow: 1;
     flex-wrap: wrap;
 }
+
+.card img {width: 80vw;}
 
 .card .card-content { padding: 15px; }
 
@@ -187,6 +189,7 @@ main section {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
 }
 
 .card .card-content h4 {
@@ -333,7 +336,11 @@ footer .fin {margin-top: 50px;}
         box-shadow: 0px 0px 10px, rgb(100, 100, 100);
         
         padding-right: 10px;
+        width: 40vw;
     }
+
+    .card img {width: 40vw;}
+
     .card .card-content { padding: 0 0 10px 10px; }
     .card .card-content h4 {display: block;}
     .card .card-content .icon-truck { padding: 5px; }
@@ -342,7 +349,7 @@ footer .fin {margin-top: 50px;}
     
     .burger-menu {display: none;}
 
-
+    
     
 
     
@@ -377,7 +384,7 @@ footer .fin {margin-top: 50px;}
         margin-top: 10px;
     }
 
-    .card {width: 140px;}
+    
     .burger-menu {display: none;}
 }
 
@@ -385,6 +392,12 @@ footer .fin {margin-top: 50px;}
 @media (min-width: 992px) {
     .search-bar input {width: 75%;}
     header .p p{margin-top: 18px;}
+    .card {
+        width: 20vw;
+    }
+
+    .card img {width: 20vw;}
+
     .card .card-content h4 {display: block;}
     .ops{
         display: flex;
