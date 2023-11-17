@@ -114,7 +114,8 @@ nav .top-list {
 /**********/
 
 .banner {
-    display: none;
+   
+   height:15%;
 }
 
 /********/
@@ -177,6 +178,7 @@ main section {
     margin-bottom: 10px;
     width: 200px;
     flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .card .card-content { padding: 15px; }
@@ -188,7 +190,7 @@ main section {
 }
 
 .card .card-content h4 {
-    display: none;
+    /*display: none;*/
     color: var(--color-grisOscuro);
 }
 
@@ -281,6 +283,11 @@ main section {
 .freg .send {
     background-color: var(--color-celeste);
     margin: 25px 20px 0;
+    
+}
+
+.send:hover{
+   background-color: #0022AA; 
 }
 
 .freg .kill {
@@ -309,15 +316,22 @@ footer div i {
 
 footer .fin {margin-top: 50px;}
 
+.ico-footer :hover{
+    color: var(--color-verde);
+}
+
 /*****************/
 /* Media Queries */
 /*****************/
 
 /* Tablet */
-@media (min-width: 361px) {
+
+
+
+@media (min-width: 575px) {
     .card {
         box-shadow: 0px 0px 10px, rgb(100, 100, 100);
-        width: 154px;
+        
         padding-right: 10px;
     }
     .card .card-content { padding: 0 0 10px 10px; }
@@ -325,14 +339,13 @@ footer .fin {margin-top: 50px;}
     .card .card-content .icon-truck { padding: 5px; }
     .card .card-content .icon-truck i { padding-left: 2px; }
 
-    nav {display: block;}
-
+    
     .burger-menu {display: none;}
-}
 
-/* Phone */
-@media (min-width: 556px) {
-    main section { gap: 17px; }
+
+    
+
+    
 
     header .logo {
         width: 25%;
@@ -365,11 +378,17 @@ footer .fin {margin-top: 50px;}
     }
 
     .card {width: 140px;}
+    .burger-menu {display: none;}
 }
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .search-bar input {width: 75%;}
     header .p p{margin-top: 18px;}
     .card .card-content h4 {display: block;}
+    .ops{
+        display: flex;
+        flex-direction: row;
+        
+    }
 }
