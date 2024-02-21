@@ -1,13 +1,13 @@
 'use strict';
 
 const productsJSON = require('../../data/productsDataBase.json')
-const productsDB = productsJSON.map(({name, price, discount, category, description})=>{
+const productsDB = productsJSON.map(({name, price, discount, image, category, description})=>{
   return {
     name:name.trim(),
     price,
     discount,
     description:description.trim(),
-    image:null,
+    image,
     categoryId: category == "visited"? 1 : 2,
     createdAt: new Date(),
     updatedAt: new Date()

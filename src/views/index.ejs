@@ -15,10 +15,10 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Basado en tu última visita</h2>
+				<h2 class="products-title">Ultimos agregados</h2>
 			</div>
 			<!-- Show the "visited" products -->
-			<% products.filter(product => product.category === "visited").forEach(product => { %>
+			<% productsVisited.forEach(product => { %>
 				<%- include('./partials/productCard', {product}) %>
 			<% }) %>
 			
@@ -33,7 +33,7 @@
 				<h2 class="products-title">Ofertas</h2>
 			</div>
 			<!-- Show the "in-sale" products -->
-			<% products.filter(product =>product.category === "in-sale").forEach((product) => { %>
+			<% productsInSale.forEach(product => { %>
 				<%- include('./partials/productCard', {product}) %>
 			<% }) %>
 			
